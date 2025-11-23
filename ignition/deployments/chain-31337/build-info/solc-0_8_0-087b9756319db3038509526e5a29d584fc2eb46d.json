@@ -1,6 +1,6 @@
 {
   "_format": "hh3-sol-build-info-1",
-  "id": "solc-0_8_0-eb282e25f67c90eacf672a8b86e773d2dfa0a7f5",
+  "id": "solc-0_8_0-087b9756319db3038509526e5a29d584fc2eb46d",
   "solcVersion": "0.8.0",
   "solcLongVersion": "0.8.0+commit.c7dfd78e",
   "userSourceNameMap": {
@@ -32,7 +32,7 @@
     },
     "sources": {
       "project/contracts/HelloWorld.sol": {
-        "content": "pragma solidity ^0.8.0;\r\n\r\ncontract HelloWorld {\r\n  string public message;\r\n\r\n  constructor(string memory init_message){\r\n    message = init_message;\r\n  }\r\n  function sayMessage() public view returns (string memory) {\r\n        return message;\r\n    }\r\n\r\n  function setMessage(string memory new_message) payable external {\r\n    require(msg.value > 0.01 ether);\r\n    message = new_message;\r\n  }\r\n\r\n\r\n}\r\n"
+        "content": "pragma solidity ^0.8.0;\n\ncontract HelloWorld {\n  string public message;\n\n  constructor(string memory init_message){\n    message = init_message;\n  }\n  function sayMessage() public view returns (string memory) {\n        return message;\n    }\n\n  function setMessage(string memory new_message) payable external {\n    require(msg.value > 0.01 ether);\n    message = new_message;\n  }\n\n\n}\n"
       }
     }
   }
